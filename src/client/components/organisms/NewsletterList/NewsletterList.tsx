@@ -41,7 +41,7 @@ export default function NewslettersList() {
     return (
       <Container>
         <NewsletterCenter>
-          <NewsletterError>Un test de message d'error {error?.message}</NewsletterError>
+          <NewsletterError>{error?.message}</NewsletterError>
           <Button onClick={refetch}>Réessayer</Button>
         </NewsletterCenter>
       </Container>

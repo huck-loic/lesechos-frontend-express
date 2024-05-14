@@ -6,6 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const LoadablePlugin = require("@loadable/webpack-plugin");
 const ROOT_DIR = path.resolve(__dirname, "../../");
 const BUILD_DIR = path.resolve(ROOT_DIR, "dist");
+const API_DIR = path.resolve(ROOT_DIR, "api");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 

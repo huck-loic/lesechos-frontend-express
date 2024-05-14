@@ -2,6 +2,18 @@
 
 This is a 2nd version of the test using Webpack / Express / React Router / Tanstack Query / Styled components
 
+# Deployement
+
+The test is deployed on :
+
+https://lesechos-frontend-express.vercel.app
+
+The two other user views are visible on :
+
+https://lesechos-frontend-express.vercel.app/one
+
+https://lesechos-frontend-express.vercel.app/multiple
+
 # Getting started
 
 Hello there, you are a new recruit in our frontend team at Les Echos, and your first task is to implement our newsletter page.

@@ -28,9 +28,9 @@ const serverConfig = {
   plugins: [new MiniCssExtractPlugin()],
   output: {
     path: BUILD_DIR,
-    filename: "[name].js",
+    filename: "[name].cjs",
     libraryTarget: "commonjs2",
-    chunkFilename: "chunks/[name].js",
+    chunkFilename: "chunks/[name].cjs",
     devtoolModuleFilenameTemplate: (info) => path.resolve(info.absoluteResourcePath).replace(/\\/g, "/"),
     assetModuleFilename: "assets/[hash][ext][query]",
   },

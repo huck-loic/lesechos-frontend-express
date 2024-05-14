@@ -4,7 +4,8 @@ const webpackNodeExternals = require("webpack-node-externals");
 const path = require("path");
 const ROOT_DIR = path.resolve(__dirname, "../../");
 const resolvePath = (...args) => path.resolve(ROOT_DIR, ...args);
-const BUILD_DIR = resolvePath("dist");
+// const BUILD_DIR = resolvePath("dist");
+const API_DIR = resolvePath("api");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const serverConfig = {
@@ -33,9 +34,9 @@ const serverConfig = {
     }),
   ],
   output: {
-    path: BUILD_DIR,
-    filename: "[name].js",
-    libraryTarget: "commonjs2",
+    path: API_DIR,
+    filename: "[name].cjs",
+    libraryTarget: "commonjs",
     chunkFilename: "chunks/[name].cjs",
     assetModuleFilename: "assets/[hash][ext][query]",
   },

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/server.cjs",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    { "source": "/client/(.+)", "destination": "/dist/client/$1" },
+    { "source": "/public/(.+)", "destination": "/public/$1" },
+    { "source": "/(.*)", "destination": "/api/server.cjs" }
+  ]
+}
